@@ -5,7 +5,9 @@ Part 1a:
 4. [ERROR] We get an error because the scope of result is only in the if block of function sumValues, so the final result log doesn't "know" what result is.
 5. [ERROR] We get an error because result is a constant, and after being initialized as 0, can not be changed again as is attempted on line 7.
 6. [ERROR] Same as above.
+
 Part 1b:
+
 1. 3. var i means i exists within the scope of the discountPrices function, and 3 is the value of i after the loop exit condition occurs.
 2. 150. var discountedPrice means discountedPrice exists within the scope of the discountPrices function, and 150 (300 * (1-0.5)) is the value of discounted price after the last for loop iteration.
 3. Same as above. finalPrice is just discountedPrice but rounded within 1 cent, which isn't relevant here. Both variables have the same scope.
